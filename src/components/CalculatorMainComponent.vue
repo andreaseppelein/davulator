@@ -57,6 +57,7 @@ const state = reactive({
 
 function calculateResult() {
   state.result = eval(state.expression)
+  state.expression = state.result
 }
 
 function addToExpression(char: string) {
